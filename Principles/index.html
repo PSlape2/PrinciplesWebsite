@@ -32,8 +32,48 @@
         text-align: center;
         padding: 10px, 10px;
       }
+     .dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
   </style>
   <body bgcolor="aliceblue">
+     <div class="dropdown">
+    <button>HubSpot Resources</button>
+</div>
+     <div class="dropdown-content">
+        <div class="dropdown">
+  <button>HubSpot Resources</button>
+  <div class="dropdown-content">
+  <a href="https://blog.hubspot.com/">Blog</a>
+  <a href="https://academy.hubspot.com/">Academy</a>
+  <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+  </div>
+</div>
+    <a rel="noopener" target="_blank" href="https://blog.hubspot.com/">Blog</a>
+    <a rel="noopener" target="_blank" href="https://academy.hubspot.com/">Academy</a>
+    <a rel="noopener" target="_blank" href="https://www.youtube.com/user/hubspot">YouTube</a>
+</div>
     <div class ="dive">
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
