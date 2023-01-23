@@ -22,7 +22,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
       }
@@ -32,13 +32,21 @@
         text-align: center;
         padding: 20px, 20px;
       }
+      .sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+      }
     </style>
 	  <body bgcolor="aliceblue">
-      <div class ="dive">
+      <div class ="dive sticky">
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="aboutme.html" class="button">About Me</a>
     </div>
+    <div style="text-align: center;">
     <h1>This is all about me!</h1>
     <br>
     <h1>   My Family</h1>
@@ -51,10 +59,12 @@
     <br>
     <h2>Programming</h2>
     <img src="imgas/code.webp" height="400">
+    <p>I know a few different languages, with my main ones being Java and Javascript</p>
     <br>
     <h2>Engineering</h2>
-    <embed type="video/webm" src="imgas/video.mp4" width="400" height="300">
+    <embed style="position: relative;" type="video/webm" src="imgas/video.mp4" width="800" height="500">
     <br>
+  </div>
     </a>
 	  </body>
 	</html>

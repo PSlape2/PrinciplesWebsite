@@ -22,7 +22,7 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
       }
@@ -33,9 +33,14 @@
         padding: 10px, 10px;
         
       }
+      .sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
     </style>
 	  <body bgcolor="aliceblue">
-    <div class ="dive">
+    <div class ="dive sticky">
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="aboutme.html" class="button">About Me</a>

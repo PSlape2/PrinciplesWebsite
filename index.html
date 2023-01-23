@@ -32,9 +32,16 @@
         text-align: center;
         padding: 10px, 10px;
       }
+      .sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+      }
   </style>
   <body bgcolor="aliceblue">
-    <div class ="dive">
+    <div class ="dive sticky">
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
       <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="aboutme.html" class="button">About Me</a>
@@ -43,5 +50,7 @@
      <div style="text-align:center;">
     <img src="imgas/placeholder.png" height="500">
      </div>
+     <br>
+     <iframe width="893" height="300" src="https://www.youtube.com/embed/ufbOHl1mmYk?&autoplay=1" title="My Happy Song | featuring Noodle & Pals | Super Simple Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </body>
 </html>
