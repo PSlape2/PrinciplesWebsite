@@ -45,3 +45,13 @@ iframe {
     border: 2px solid #73AD21;
     padding: 20px;
 }
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+    background-color: rgb(128,128,128);
+}
+.center {
+    text-align: center;
+}
