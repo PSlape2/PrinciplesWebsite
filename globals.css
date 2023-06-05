@@ -42,5 +42,9 @@ embed {
     height: 400px;   
 }
 iframe {
-
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 400px;
+    height: 400px; 
 }
