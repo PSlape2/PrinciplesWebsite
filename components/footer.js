@@ -8,13 +8,12 @@ footerTemplate.innerHTML = `
             background-color: rgb(111, 111, 245);
         }
         #inner {
-            columns:50px 3;
             float: right;
         }
     </style>
     <div id="foot">
         <div id="inner">
-            <a href="https://github.com/PSlape2/PrinciplesWebsite2022">
+            <a href="https://github.com/PSlape2/PrinciplesWebsite2022" style="float: right">
                 <img alt="Github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="50">
             </a>
         </div>
