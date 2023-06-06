@@ -9,6 +9,9 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  .button:hover {
+    background-color: gray;
+  }
 .dive {
     color: black;
     background-color: rgb(111, 111, 245);
@@ -23,21 +26,19 @@
     margin: auto;
     border-radius: 100px;
     border: 2px solid #73AD21;
-    padding: 20px;
-    width: 400px;
-    height: 400px;
+    padding: 30px;
   }
 img {
     margin: auto;
     border-radius: 100px;
     border: 2px solid #73AD21;
-    padding: 20px;
+    padding: 30px;
   }
 embed {
     margin: auto;
     border-radius: 100px;
     border: 2px solid #73AD21;
-    padding: 20px;
+    padding: 30px;
 }
 iframe {
     margin: auto;
