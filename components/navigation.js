@@ -15,15 +15,9 @@ class NavBar extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = `
-            <link rel="stylesheet" href="/components/style/globals.css">
-            <div class ="dive sticky">
-                <a href="/index.html" class="button">Home</a>
-                <a href="/portfolio.html" class="button">Portfolio</a>
-                <a href="/aboutme.html" class="button">About Me</a>
-            </div>
-        `;
+        const shadowRoot = this.attachShadow({mode: 'closed'});
+        shadowRoot.appendChild(navTemplate.content);
     }
 }
 
-customElements.define('NavBar', NavBar);
+customElements.define('navbar-component', NavBar);
