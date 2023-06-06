@@ -12,7 +12,6 @@ template.innerHTML = `
 class NavBar extends HTMLElement {
     constructor() {
         super();
-        const shadow = this.attachShadow({mode: 'open'});
     }
     connectedCallback() {
         const shadow = this.attachShadow({ mode: 'closed' });
