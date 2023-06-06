@@ -1,5 +1,6 @@
 
 const navTemplate = document.createElement('template');
+
 navTemplate.innerHTML = `
     <link rel="stylesheet" href="/components/style/globals.css">
     <div class ="dive sticky">
