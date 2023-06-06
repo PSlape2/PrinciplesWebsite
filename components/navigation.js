@@ -15,8 +15,14 @@ class NavBar extends HTMLElement {
         super();
     }
     connectedCallback() {
-        const shadow = this.attachShadow({ mode: 'closed' });
-        shadow.appendChild(navTemplate.content);
+        this.innerHTML = `
+            <link rel="stylesheet" href="/components/style/globals.css">
+            <div class ="dive sticky">
+                <a href="/index.html" class="button">Home</a>
+                <a href="/portfolio.html" class="button">Portfolio</a>
+                <a href="/aboutme.html" class="button">About Me</a>
+            </div>
+        `;
     }
 }
 
