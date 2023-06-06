@@ -1,0 +1,38 @@
+#rounded {
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    padding: 30px;
+  }
+img {
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    padding: 30px;
+  }
+embed {
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    padding: 30px;
+}
+iframe {
+    margin: auto;
+    border-radius: 100px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+    background-color: rgb(128,128,128);
+}
+.center {
+    text-align: center;
+}
+#largeBreak {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}

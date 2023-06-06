@@ -1,63 +1,32 @@
 <!doctype html>
 	<html lang="en">
-		<script>
-      function colorChange(x) {
-        x.style.background = "gray";
-      }
-      
-      function colorOut(x) {
-        x.style.background = "white";
-      }
-  </script>
 	  <head>
 	    <meta charset="utf-8">
 	    <title>About Me</title>
-	  </head>
-    <style>
-      .button {
-        background-color: #ffffff;
-        border: none;
-        color: rgb(0, 0, 0);
-        padding: 20px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 12px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      .dive {
-        color: black;
-        background-color: lavender;
-        text-align: center;
-        padding: 20px, 20px;
-      }
-      .sticky {
-        position: sticky;
-        top: 0;
-      }
-    </style>
+      <link rel="stylesheet" href="components/style/globals.css">
+      <script src="components/navigation.js" type="text/Javascript" defer></script>
+      <script src="components/footer.js" type="text/Javascript" defer></script>
+    </head>
+
 	  <body background-color="aliceblue">
-      <div class ="dive sticky">
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="aboutme.html" class="button">About Me</a>
-    </div>
-    <div style="text-align: center;">
-    <h1>This is some about me!</h1>
-    <br>
-    <h1>Here are my hobbies</h1>
-    <h2>Flight Sim</h2>
-    <img src="imgas/plane.jpg" height="400">
-    <br>
-    <h2>Programming</h2>
-    <img src="imgas/code.webp" height="400">
-    <p>I know a few different languages, with my main ones being Java, Javascript, C#, and Python. I am currently learning Typescript.</p>
-    <br>
-    <h2>Engineering</h2>
-    <embed style="position: relative;" type="video/webm" src="imgas/video.mp4" width="800" height="500">
-    <br>
-  </div>
-    </a>
+      <navbar-component></navbar-component>
+      <main>
+        <div style="text-align: center;">
+          <h1>This is some stuff about me!</h1>
+          <br>
+          <h1>Here are my hobbies</h1>
+          <h2>Flight Sim</h2>
+          <img alt="plane" src="imgas/plane.jpg" height="400">
+          <br>
+          <h2>Programming</h2>
+          <img alt="Picture with Java code" src="imgas/code.webp" height="400">
+          <p>I know a few different languages, with my main ones being Java, Javascript, C#, and Python. I am currently learning Typescript.</p>
+          <br>
+          <h2>Engineering</h2>
+          <embed id="rounded" style="position: relative;" type="video/webm" src="imgas/video.mp4" width="800" height="500">
+          <br>
+        </div>
+      </main>
+      <footer-component></footer-component>
 	  </body>
 	</html>

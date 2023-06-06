@@ -1,53 +1,25 @@
 <!doctype html>
 <html lang="en">
-   <script>
-      function colorChange(x) {
-        x.style.background = "gray";
-      }
-      
-      function colorOut(x) {
-        x.style.background = "white";
-      }
-  </script>
   <head>
     <meta charset="utf-8">
-    <title>Home Alone</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="components/style/globals.css">
+    <script src="components/navigation.js" type="text/Javascript" defer></script>
+    <script src="components/footer.js" type="text/Javascript" defer></script>
   </head>
-  <style>
-    .button {
-      background-color: #ffffff;
-      border: none;
-      color: rgb(0, 0, 0);
-      padding: 20px 25px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .dive {
-        color: black;
-        background-color: lavender;
-        text-align: center;
-        padding: 10px, 10px;
-      }
-      .sticky {
-        position: sticky;
-        top: 0;
-      }
-  </style>
+
   <body background-color="aliceblue">
-    <div class ="dive sticky">
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="index.html" class="button">Home</a>
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="portfolio.html" class="button">Portfolio</a>
-      <a onmouseover="colorChange(this)" onmouseout="colorOut(this)" href="aboutme.html" class="button">About Me</a>
-    </div>
-    <h1 style="text-align:center; ">This is Peyton's Home Page!</h1>
-     <div style="text-align:center;">
-    <img src="imgas/houser.jpg" height="500">
-     <br>
-     <iframe width="893" height="300" src="https://www.youtube.com/embed/ufbOHl1mmYk?&autoplay=1" title="My Happy Song | featuring Noodle & Pals | Super Simple Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-     </div>
+    <navbar-component></navbar-component>
+    <main>
+      <h1 style="text-align:center; ">This is Peyton's Home Page!</h1>
+      <div style="text-align:center;">
+        <img alt="Home Alone" src="imgas/houser.jpg" height="500">
+        <br>
+        <div id="largeBreak"></div>
+        <iframe width="893" height="300" src="https://www.youtube.com/embed/ufbOHl1mmYk?&autoplay=1" title="My Happy Song | featuring Noodle & Pals | Super Simple Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div id="largeBreak"></div>
+    </main>
+    <footer-component></footer-component>
   </body>
 </html>
