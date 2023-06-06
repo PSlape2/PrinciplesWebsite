@@ -1,6 +1,6 @@
 
-const template = document.createElement('NavBar');
-template.innerHTML = `
+const navTemplate = document.createElement('template');
+navTemplate.innerHTML = `
     <link rel="stylesheet" href="components/style/globals.css">
     <div class ="dive sticky">
         <a href="index.html" class="button">Home</a>
@@ -15,7 +15,7 @@ class NavBar extends HTMLElement {
     }
     connectedCallback() {
         const shadow = this.attachShadow({ mode: 'closed' });
-        shadow.appendChild(template.content);
+        shadow.appendChild(navTemplate.content);
     }
 }
 
