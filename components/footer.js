@@ -1,7 +1,7 @@
 
 const footerTemplate = document.createElement('template');
 
-navTemplate.innerHTML = `
+footerTemplate.innerHTML = `
     <style>
         #foot {
             height 100px;
